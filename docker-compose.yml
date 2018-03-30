@@ -1,0 +1,13 @@
+version: '3'
+services:
+  db:
+    image: postgres
+  web:
+    build: .
+    command: bundle exec shotgun -p 3020 -o 0.0.0.0
+    volumes:
+      - .:/app
+    ports:
+      - "3020:3020"
+    depends_on:
+      - db 

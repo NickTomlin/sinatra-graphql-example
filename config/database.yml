@@ -1,0 +1,15 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: postgres
+  host: db
+  password:
+  pool: 5
+
+development:
+  <<: *default
+  database: sinatra_graphql_development
+
+test:
+  <<: *default
+  database: sinatra_graphql_test
