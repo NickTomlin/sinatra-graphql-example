@@ -1,4 +1,4 @@
-Sinatra Graphql
+Sinatra Graphql Example
 ===
 
 A quick and dirty implementation of an [SDL](https://blog.graph.cool/graphql-sdl-schema-definition-language-6755bcb9ce51) based GraphQL api in [Sinatra](http://sinatrarb.com/). Props to @kyledetella for the idea and most of the hard work in Rails land :smile:.
